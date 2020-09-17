@@ -1,0 +1,1 @@
+web gunicorn Ranky:app
