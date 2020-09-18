@@ -41,10 +41,6 @@ const fetchAndUpdate = async () => {
         total.innerText = user[0];
     });
     //We have finished loading and adding all the datas to the table. Now toggle the visibilty of the loader and display the table
+    table.style.display = "";
     loader.classList.toggle('visible');
-    //Wait for 1 seconds and the make the table visible
-    setTimeout(() => {
-        let table = document.querySelector('#ranky-table');
-        table.style.display = "";
-    }, 1000)
 }
