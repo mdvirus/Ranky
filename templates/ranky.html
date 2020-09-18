@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ranking of Haragachi Programmers</title>
         <link rel="icon" href="data:image/jpeg;base64,/9j/4QA0RXhpZgAATU0AKgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAAAAAAAAAD/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAyADIDASIAAhEBAxEB/8QAHAABAAIDAQEBAAAAAAAAAAAAAAkKBAYHCAIF/8QAPhAAAQMDAwECCAkNAAAAAAAAAQIDBAAFBgcIESESMQkTFBU4QXXBGCJRVVdhdpPRMjdCYnGBkZWWs7TS0//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCKqsxu0T30BxuFIcQrqFpaUQf38Vh1Yv2Ieh5pL7BY99BXd8x3H5vlfcq/CnmO4/N8r7lX4VZUm7itKbbOfhzdTsOiS47imno79/iIcaWk8KSpJc5BBBBB6givj4TGkH0rYR/UcP8A6UFaqVb5UPsmRGdYCu4uoKef41jVZ3tt/wAE1qx+4Rrdc8ezqxqJjTGokhi4RuSOShwJKk8kHuPqNQPeEH0Es23jcxe8dx1HiMfnR2brAiEk+Stu9oKaBPUhK0L7P6vZHXjmg800pSgVYv2Ieh5pL7BY99V0KsX7EPQ80l9gse+ghq1v2m61XrWjPrjb9KcxmwJeQXCRHksWWQpt1tUlxSVpIRwQQQQfrrSPgb67fQ9m38ikf6VNzfvCE7fMZvdwtF01JhRLlb5DkWVHMGWotutqKVpJDJB4UCOnyV1DSPWzCNd8acv2B5HFyO1tPqjOvxwtBbdABKVoWlKknggjkDkEEdKDyR4IvS7MNKtIM1gZljF3xabJvqX2I93huRlut+Ttp7SQsDkcgjkfJXjPwyPpcRPszC/uyKlh3E7ocF2v45GvOcSbgy1MUtuE1Ct7z5kupT2vFBaU+LQojqA4tPPB47jxAlul3A3Dc5rVfc8nxhAallDEGCFdryWK2Oy2gq9Z71KPrUpXHA4FByKlKUCrF+xD0PNJfYLHvquhXSLDuR1axazxLTZdUcztFrhthqNBgZDLYYYQO5KEJcCUj6gKDG3B/n71K+01z/ynK33Z5uyv+0vVBm/W8OT8dmlLF6swXwmWwD+UnnoHUckoV+0Hoo1w+4XCVeJ8mbOkvTJspxT78iQ4XHHXFElS1qPJUokkknqSaw6CyjebPp3vE0HLDqmckwjKIYcZfb6LbP6K0k9W3W1j19UqSQR3ioC90O3i87XtY7tg13fbmoaSmVBnN8ASoiyfFuFPPxVfFIKT3KSeORwTruH656kad2dVqxTUHKcYtZcLxhWa9SYjJcPAK+w2tKe0eByeOegr8XMs8yXUW7+dcryG7ZPdA0lgTrzOdlvhsElKO24pSuyCTwOeOp+Wg16lKUClKUClKUClKUClKUH/2Q==">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap">
+        <link rel="stylesheet" href="/static/styles.css">
         <style type="text/css">
         body {
             font-family: "Raleway", Serif;
@@ -19,37 +22,36 @@
             <small class="text-muted">Based on total solved problems of listed OJ&#180;s</small>
             </h3><br>
             
-            <table class="table">
-                <thead class="thead-light">
-                    <tr>
-                        <th></th>
-                        <th colspan="2">Programmer&#180;s Info</th>
-                        <th colspan="4">Solve Count</th>
-                    </tr>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Username</th>
-                        <th scope="col">Toph</th>
-                        <th scope="col">Dimik</th>
-                        <th scope="col">URI</th>
-                        <th scope="col">Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for i in range(data.__len__()) %}
-                    <tr>
-                        <th scope="row">{{ i+1 }}</th>
-                        <td>{{ data[i][1] }}</td>
-                        <td>{{ data[i][2] }}</td>
-                        <td>{{ data[i][3] }}</td>
-                        <td>{{ data[i][4] }}</td>
-                        <td>{{ data[i][5] }}</td>
-                        <td>{{ data[i][0] }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
+            <div class="position-relative">
+                <div class="loader-wrapper">
+                    <h1>Loading data...</h1>
+                    <div class="loader-spinner"></div>
+                </div>
+                <table class="table" id="ranky-table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th></th>
+                            <th colspan="2">Programmer&#180;s Info</th>
+                            <th colspan="4">Solve Count</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Toph</th>
+                            <th scope="col">Dimik</th>
+                            <th scope="col">URI</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-table">
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <script src="/static/ranky.js"></script>
+        <script>
+            fetchAndUpdate();
+        </script>
     </body>
 </html>
