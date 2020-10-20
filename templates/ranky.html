@@ -16,6 +16,9 @@
     </head>
     
     <body><br><br>
+        <noscript>
+            Javscript is required to load this site!
+        </noscript>
         <div class="container">
             <h1>Ranky<sup>&beta;</sup></h1>
             <h3>Ranking of Haragachi Programmers<br>
@@ -50,7 +53,13 @@
         </div>
         <script src="/static/ranky.js"></script>
         <script>
-            fetchAndUpdate();
+            if (location.protocol != 'https:')
+            {
+             location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+            }
+            else {
+                fetchAndUpdate();
+            }
         </script>
     </body>
 </html>
