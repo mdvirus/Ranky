@@ -1,5 +1,5 @@
 # Ranky - v2.1
-### See the visuals on: http://ranky.herokuapp.com
+### See the visuals on: https://ranky.glitch.me or https://ranky.ml
 
 ----
 
