@@ -1,4 +1,4 @@
-# Ranky - v2.1
+# Ranky - v2.2
 ### See the visuals on: https://ranky.glitch.me or https://ranky.ml
 
 ----
