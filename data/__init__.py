@@ -13,7 +13,7 @@ data = [
     [0, "Majedul Islam", "majed", "", "", "https://urionlinejudge.com.br/judge/en/profile/229317"],
     [0, "Md. Mushfiqur Rahman", "mdvirus", "https://toph.co/u/mdvirus", "https://dimikoj.com/users/53/mdvirus", "https://urionlinejudge.com.br/judge/en/profile/223624"],
     [0, "Md. Shazzad Hossein Shakib", "HackersBoss", "https://toph.co/u/HackersBoss", "", ""],
-    [0, "Abdullah Al Mukit", "newbie_mukit", "https://toph.co/u/newbie_mukit", "", "https://urionlinejudge.com.br/judge/en/profile/228785"],
+    [0, "Abdullah Al Mukit", "newbie_mukit", "https://toph.co/u/newbie_mukit", "https://dimikoj.com/users/3606/newbie_abdullah", "https://urionlinejudge.com.br/judge/en/profile/228785"],
     [0, "Md. Toukir Ahammed", "toukir48bit", "https://toph.co/u/toukir48bit", "", ""],
     [0, "Md. Sifat Al Imtiaz", "SifatTheCoder", "https://toph.co/u/SifatTheCoder", "", ""],
     [0, "Mojahidul Islam Rakib", "HelloRakib", "https://toph.co/u/HelloRakib", "", ""],
